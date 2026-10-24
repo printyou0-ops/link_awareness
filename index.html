@@ -79,7 +79,7 @@ canvas#rain{position:fixed;inset:0;opacity:.18;pointer-events:none;transition:op
 </div>
 <script>
 const $=id=>document.getElementById(id);
-const DUR=5,STEP=1500;
+const DUR=5,STEP=2000;
 function show(id){document.querySelectorAll('.scr').forEach(s=>s.classList.remove('on'));$(id).classList.add('on')}
 function flash(){const f=$('fl');f.classList.remove('go');void f.offsetWidth;f.classList.add('go')}
 const cv=$('rain'),c=cv.getContext('2d');let cols,drops;
